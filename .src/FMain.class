@@ -1,0 +1,287 @@
+' Gambas class file
+
+Private UpDownKeys As Boolean = False
+Private TermNumber As Integer = 0
+
+Public Sub Form_Open()
+  Me.TopOnly = Not Me.TopOnly
+End
+
+Sub terminalSendKey(keyP As String)
+  Dim i As Integer[]
+  Dim dw As DesktopWindow
+  Try i = Desktop.FindWindow("*@*", Null, Null)
+  If Error Then
+    Message.Info("ERROR")
+  Endif
+    If i.Count > 0 Then
+      With dw = New DesktopWindow(i[TermNumber])
+         Print .VisibleName, .X, .Y, .W, .H, .Id
+         .Activate
+          If UpDownKeys = True Then
+              keyP = UCase(keyP)
+              Desktop.SendKeys(keyP)
+            Else
+              Desktop.SendKeys(keyP)
+          Endif
+      End With
+    Endif
+  Finally
+    Print "SendKey: " & keyP
+  Catch
+    Print "SendKey Error"
+    Print Error.Code
+    Print Error.Text
+    Print Error.Where
+End
+
+Public Sub ButtonClose_Click()
+  Me.Close
+End
+
+Public Sub ButtonExpand_Click()
+  If FMain.Height = 40 Then
+      FMain.Height = 152
+    Else
+      FMain.Height = 40
+  Endif
+End
+
+Public Sub Button1_Click()
+  terminalSendKey("1")
+End
+
+Public Sub Button2_Click()
+  terminalSendKey("2")
+End
+
+Public Sub Button3_Click()
+  terminalSendKey("3")
+End
+
+Public Sub Button4_Click()
+  terminalSendKey("4")
+End
+
+Public Sub Button5_Click()
+  terminalSendKey("5")
+End
+
+Public Sub Button6_Click()
+  terminalSendKey("6")
+End
+
+Public Sub Button7_Click()
+  terminalSendKey("7")
+End
+
+Public Sub Button8_Click()
+  terminalSendKey("8")
+End
+
+Public Sub Button9_Click()
+  terminalSendKey("9")
+End
+
+Public Sub Button10_Click()
+  terminalSendKey("0")
+End
+
+Public Sub ButtonEnter_Click()
+  terminalSendKey("\n")
+End
+
+Public Sub ButtonErase_Click()
+  terminalSendKey("[BackSpace]")
+End
+
+Public Sub ButtonQ_Click()
+  terminalSendKey("q")
+End
+
+Public Sub ButtonW_Click()
+  terminalSendKey("w")
+End
+
+Public Sub ButtonE_Click()
+  terminalSendKey("e")
+End
+
+Public Sub ButtonR_Click()
+  terminalSendKey("r")
+End
+
+Public Sub ButtonT_Click()
+  terminalSendKey("t")
+End
+
+Public Sub ButtonY_Click()
+  terminalSendKey("y")
+End
+
+Public Sub ButtonU_Click()
+  terminalSendKey("u")
+End
+
+Public Sub ButtonI_Click()
+  terminalSendKey("i")
+End
+
+Public Sub ButtonO_Click()
+  terminalSendKey("o")
+End
+
+Public Sub ButtonP_Click()
+  terminalSendKey("p")
+End
+
+Public Sub ButtonA_Click()
+  terminalSendKey("a")
+End
+
+Public Sub ButtonS_Click()
+  terminalSendKey("s")
+End
+
+Public Sub ButtonD_Click()
+  terminalSendKey("d")
+End
+
+Public Sub ButtonF_Click()
+  terminalSendKey("f")
+End
+
+Public Sub ButtonG_Click()
+  terminalSendKey("g")
+End
+
+Public Sub ButtonH_Click()
+  terminalSendKey("h")
+End
+
+Public Sub ButtonJ_Click()
+  terminalSendKey("j")
+End
+
+Public Sub ButtonK_Click()
+  terminalSendKey("k")
+End
+
+Public Sub ButtonL_Click()
+  terminalSendKey("l")
+End
+
+Public Sub ButtonZ_Click()
+  terminalSendKey("z")
+End
+
+Public Sub ButtonX_Click()
+  terminalSendKey("x")
+End
+
+Public Sub ButtonC_Click()
+  terminalSendKey("c")
+End
+
+Public Sub ButtonV_Click()
+  terminalSendKey("v")
+End
+
+Public Sub ButtonB_Click()
+  terminalSendKey("b")
+End
+
+Public Sub ButtonN_Click()
+  terminalSendKey("n")
+End
+
+Public Sub ButtonM_Click()
+  terminalSendKey("m")
+End
+
+Public Sub ButtonBAR_Click()
+  UpDownKeys = False
+  terminalSendKey(String.Chr(47))
+End
+
+Public Sub ButtonPOINT_Click()
+  UpDownKeys = False
+  terminalSendKey(String.Chr(46))
+End
+
+Public Sub ButtonHYPHEN_Click()
+  UpDownKeys = False
+  terminalSendKey(String.Chr(45))
+End
+
+Public Sub ButtonUP_Click()
+  UpDownKeys = False
+  terminalSendKey("[Up]")
+End
+
+Public Sub ButtonDOWN_Click()
+  UpDownKeys = False
+  terminalSendKey("[Down]")
+End
+
+Public Sub ButtonLEFT_Click()
+  UpDownKeys = False
+  terminalSendKey("[Left]")
+End
+
+Public Sub ButtonRIGHT_Click()
+  UpDownKeys = False
+  terminalSendKey("[Right]")
+End
+
+Public Sub ButtonSPACE_Click()
+  UpDownKeys = False
+  terminalSendKey(" ")
+End
+
+Public Sub ButtonCtrlC_Click()
+  UpDownKeys = False
+  terminalSendKey("{[Control_L]c}")
+End
+
+Public Sub ButtonQUOT_Click()
+  UpDownKeys = False
+  terminalSendKey(String.Chr(39))
+End
+
+Public Sub ButtonUPALL_Click()
+  If ButtonUPALL.Text = "⇧" Then
+    ButtonUPALL.Text = "⬆"
+    UpDownKeys = True
+    Else
+      ButtonUPALL.Text = "⇧"
+      UpDownKeys = False
+  Endif
+End
+
+Public Sub ButtonTERM_Click()
+  If ButtonTERM.Text = "❶" Then
+    ButtonTERM.Text = "❷" 
+    TermNumber = 1
+    Else If ButtonTERM.Text = "❷" Then
+      ButtonTERM.Text = "❸" 
+      TermNumber = 2
+      Else If ButtonTERM.Text = "❸" Then
+        ButtonTERM.Text = "❹" 
+        TermNumber = 3
+        Else If ButtonTERM.Text = "❹" Then
+          ButtonTERM.Text = "❺" 
+          TermNumber = 4
+          Else If ButtonTERM.Text = "❺" Then
+            ButtonTERM.Text = "❻" 
+            TermNumber = 5
+            Else If ButtonTERM.Text = "❻" Then
+              ButtonTERM.Text = "❶" 
+              TermNumber = 0
+  Endif
+End
+
+Public Sub ButtonTERM2_Click()
+  Message.Info("<b>About LCD-Keyboard-Kali v1.0.1</b><br>Version of 2020-06-23<br>Github: @danielcshn<br><br>This program uses Gambas3 version 3.14.3.<br>", "Fine")
+  'Message.Info("Esto es un mensaje de información")
+End

@@ -1,0 +1,14 @@
+FMain
+LCD-Keyboard
+0
+0
+1.0.0
+
+gb.image
+gb.gtk3
+gb.form
+gb.debug
+gb.desktop
+gb.desktop.x11
+gb.vb
+

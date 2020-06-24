@@ -1,0 +1,222 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  Move(0,1,480,40)
+  #Scaled = False
+  Resizable = False
+  Border = False
+  Sticky = True
+  Transparent = True
+  { Button1 Button
+    Move(8,4,32,32)
+    Text = ("1")
+  }
+  { Button2 Button
+    Move(40,4,32,32)
+    Text = ("2")
+  }
+  { Button3 Button
+    Move(72,4,32,32)
+    Text = ("3")
+  }
+  { Button4 Button
+    Move(104,4,32,32)
+    Text = ("4")
+  }
+  { Button5 Button
+    Move(136,4,32,32)
+    Text = ("5")
+  }
+  { Button6 Button
+    Move(168,4,32,32)
+    Text = ("6")
+  }
+  { Button7 Button
+    Move(200,4,32,32)
+    Text = ("7")
+  }
+  { Button8 Button
+    Move(232,4,32,32)
+    Text = ("8")
+  }
+  { Button9 Button
+    Move(264,4,32,32)
+    Text = ("9")
+  }
+  { Button10 Button
+    Move(296,4,32,32)
+    Text = ("0")
+  }
+  { ButtonEnter Button
+    Move(328,4,32,32)
+    Text = ("↵")
+  }
+  { ButtonErase Button
+    Move(360,4,32,32)
+    Text = ("⌫")
+  }
+  { ButtonClose Button
+    Move(440,4,32,32)
+    Text = ("✕")
+  }
+  { ButtonExpand Button
+    Move(400,4,32,32)
+    Text = ("≡")
+  }
+  { ButtonQ Button
+    Move(8,40,32,32)
+    Text = ("Q")
+  }
+  { ButtonW Button
+    Move(40,40,32,32)
+    Text = ("W")
+  }
+  { ButtonE Button
+    Move(72,40,32,32)
+    Text = ("E")
+  }
+  { ButtonR Button
+    Move(104,40,32,32)
+    Text = ("R")
+  }
+  { ButtonT Button
+    Move(136,40,32,32)
+    Text = ("T")
+  }
+  { ButtonY Button
+    Move(168,40,32,32)
+    Text = ("Y")
+  }
+  { ButtonU Button
+    Move(200,40,32,32)
+    Text = ("U")
+  }
+  { ButtonI Button
+    Move(232,40,32,32)
+    Text = ("I")
+  }
+  { ButtonO Button
+    Move(264,40,32,32)
+    Text = ("O")
+  }
+  { ButtonP Button
+    Move(296,40,32,32)
+    Text = ("P")
+  }
+  { ButtonA Button
+    Move(8,76,32,32)
+    Text = ("A")
+  }
+  { ButtonS Button
+    Move(40,76,32,32)
+    Text = ("S")
+  }
+  { ButtonD Button
+    Move(72,76,32,32)
+    Text = ("D")
+  }
+  { ButtonF Button
+    Move(104,76,32,32)
+    Text = ("F")
+  }
+  { ButtonG Button
+    Move(136,76,32,32)
+    Text = ("G")
+  }
+  { ButtonH Button
+    Move(168,76,32,32)
+    Text = ("H")
+  }
+  { ButtonJ Button
+    Move(200,76,32,32)
+    Text = ("J")
+  }
+  { ButtonK Button
+    Move(232,76,32,32)
+    Text = ("K")
+  }
+  { ButtonL Button
+    Move(264,76,32,32)
+    Text = ("L")
+  }
+  { ButtonZ Button
+    Move(40,112,32,32)
+    Text = ("Z")
+  }
+  { ButtonX Button
+    Move(72,112,32,32)
+    Text = ("X")
+  }
+  { ButtonC Button
+    Move(104,112,32,32)
+    Text = ("C")
+  }
+  { ButtonV Button
+    Move(136,112,32,32)
+    Text = ("V")
+  }
+  { ButtonB Button
+    Move(168,112,32,32)
+    Text = ("B")
+  }
+  { ButtonN Button
+    Move(200,112,32,32)
+    Text = ("N")
+  }
+  { ButtonM Button
+    Move(232,112,32,32)
+    Text = ("M")
+  }
+  { ButtonPOINT Button
+    Move(264,112,32,32)
+    Text = (".")
+  }
+  { ButtonHYPHEN Button
+    Move(296,112,32,32)
+    Text = ("-")
+  }
+  { ButtonBAR Button
+    Move(328,40,32,32)
+    Text = ("/")
+  }
+  { ButtonQUOT Button
+    Move(296,76,32,32)
+    Text = ("'")
+  }
+  { ButtonUP Button
+    Move(400,80,32,32)
+    Text = ("↑")
+  }
+  { ButtonDOWN Button
+    Move(400,112,32,32)
+    Text = ("↓")
+  }
+  { ButtonLEFT Button
+    Move(368,112,32,32)
+    Text = ("←")
+  }
+  { ButtonRIGHT Button
+    Move(432,112,32,32)
+    Text = ("→")
+  }
+  { ButtonSPACE Button
+    Move(8,112,32,32)
+    Text = (" ")
+  }
+  { ButtonCtrlC Button
+    Move(328,76,32,32)
+    Text = ("×")
+  }
+  { ButtonUPALL Button
+    Move(328,112,32,32)
+    Text = ("⇧")
+  }
+  { ButtonTERM Button
+    Move(360,40,32,32)
+    Text = ("❶")
+  }
+  { ButtonTERM2 Button
+    Move(440,40,32,32)
+    Text = ("ℹ")
+  }
+}
