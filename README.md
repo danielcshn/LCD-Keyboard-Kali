@@ -55,9 +55,9 @@ The application is currently designed only to work against one or more open Term
 # Screenshots
 
 ## Minimalist
-![Screenshot](https://github.com/danielcshn/LCD-Keyboard-Kali/img/1.png)
+![Screenshot](https://github.com/danielcshn/LCD-Keyboard-Kali/blob/master/img/1.jpg)
 ## Expanded
-![Screenshot](https://github.com/danielcshn/LCD-Keyboard-Kali/img/2.png)
+![Screenshot](https://github.com/danielcshn/LCD-Keyboard-Kali/blob/master/img/2.jpg)
 
 # Changelog
 
